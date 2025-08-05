@@ -1,11 +1,12 @@
-/* :root{
+:root{
     --light: #FFFFFF;
     --dark: #000000;
     --primaire: #004E98;
-    --secondaire: #3A6EA5;
+    --secondaire: #4b84c0;
     --tertiaire: #C0C0C0;
     --quaternaire: #EBEBEB;
-    --quinaire: #FF6700;
+    --quinaire: #E98848;
+    --valide: #6DD100;
 }
 
 *{
@@ -19,8 +20,8 @@ html{
 body{
     font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #004E98;
-    background: linear-gradient(316deg,rgba(0, 78, 152, 1) 0%, rgba(235, 235, 235, 1) 100%);
+    background: #C0C0C0;
+    background: linear-gradient(142deg,rgba(192, 192, 192, 1) 29%, rgba(58, 110, 165, 1) 100%);
     min-height: 100vh;
 }
 
@@ -28,9 +29,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secondaire);
+    padding: 1rem;
 }
 
-img{
+.logoCRM{
     width: 40rem;
     height: auto;
     border: 1px solid var(--dark);
@@ -42,7 +45,40 @@ h1{
     width: 100%;
 }
 
-table{
+.icone{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--quaternaire);
+    padding: 2rem;
+}
+
+.listeIcone{
+    padding-right: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--primaire);
+    border: 2px solid var(--primaire);
+    padding: 1.5rem;
+}
+
+a:hover{
+    background-color: var(--secondaire);
+    color: var(--quaternaire);
+}
+
+.maison{
+    width: 50px;
+    height: auto;
+}
+
+/* table{
     width: 75%;
     margin-top: 10rem;
     margin-left: auto;
@@ -54,19 +90,16 @@ table{
 }
 
 thead{
-    background: #004E98;
-    background: linear-gradient(76deg,rgba(0, 78, 152, 1) 0%, rgba(235, 235, 235, 1) 100%);
+    background-color: var(--primaire);
     color: var(--light);
 }
 
 tbody tr:nth-child(odd) {
-    background: #C0C0C0;
-    background: linear-gradient(90deg,rgba(192, 192, 192, 1) 72%, rgba(58, 110, 165, 1) 100%);
+    background-color: var(--tertiaire);
 }
 
 tbody tr:nth-child(even) {
-    background: #EBEBEB;
-    background: linear-gradient(270deg,rgba(235, 235, 235, 1) 72%, rgba(58, 110, 165, 1) 100%);
+    background-color: var(--quaternaire);
 }
 
 
@@ -78,7 +111,7 @@ th{
 
 td{
     border: 3px solid var(--dark);    
-}
+} */
 
 footer{
     margin-left: auto;
@@ -91,4 +124,4 @@ footer{
     background-color: var(--quinaire);
     padding: 2rem;
 }
- */
+
