@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Ajout d'un utilisateur</title>
 </head>
 <body>
@@ -14,9 +15,92 @@
     </header>
 
     <main>
-        <label for="ajoutUtilisateur">Ajout d'un utilisateur :</label>
-        <input type="text" id="ajoutUtilisateur" required > 
-        <button id="validerUtilisateur">Ajouter</button>
+
+        <ul class="icone">
+            <li><a href="./index.html"><img class="maison" src="./img/logo/maison.png" alt="icone maison"></li></a>
+            <li><a href="./roles.html">Rôles des utilisateurs</li></a>
+            <li><a href="./utilisateurs.html">Liste utilisateurs</a></li>
+            <li><a href="./roles-ajouter.html">Ajout rôle</li></a>
+            <li>Créer utilisateur</li>
+            <li><a href="./profil.html">Détails utilisateur</li></a>
+        </ul>
+
+        <form>
+            <fieldset>
+
+                <legend>Identifiant utilisateur</legend>
+
+                <label for="prenom">Prénom* :</label>
+                <input type="text" id="prenom" required placeholder="Prénom">
+
+                <label for="nom">Nom* :</label>
+                <input type="text" id="nom" required placeholder="Nom complet">
+
+                <label for="dateNaissance">Date de naissance* :</label>
+                <input type="date" id="dateNaissance" required>
+
+                <label for="adresseMail">Adresse E-mail* :</label>
+                <input type="email" id="adresseMail" required placeholder="">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Coordonnées utilisateur</legend>
+
+                <label for="numeroRue">Numéro de rue* :</label>
+                <input type="number" id="numeroRue" required>
+                <select id="suffixeRue" required>
+                    <option> </option>
+                    <option>bis</option>
+                    <option>ter</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>impasse</option>
+                    <option>allée</option>
+                </select>
+
+                <label for="nomDeRue">Adresse* :</label>
+                <input type="text" id="nomDeRue" required placeholder="Rue">
+
+                <label for="nomcommune">Commune* :</label>
+                <input type="text" id="nomcommune" required placeholder="Commune">
+
+                <label for="codePostal">Code postal* :</label>
+                <input type="number" id="codePostal" required>
+
+                <label for="numeroTel">Numéro de poste :</label>
+                <input type="number" id="numeroTel">
+
+            </fieldset>
+
+            <fieldset>
+                
+                <legend>Autre information</legend>
+
+                <label for="langueChoixUn">Langue parlée 1 :</label>
+                <input type="text" id="langueChoixUn">
+
+                <label for="langueChoixDeux">Langue parlée 2 :</label>
+                <input type="text" id="langueChoixDeux">
+
+                <label for="langueChoixTrois">Langue parlée 3 :</label>
+                <input type="text" id="langueChoixTrois">
+
+                <label for="hobbyUn">Centre d'intérêt 1 :</label>
+                <input type="text" id="hobbyUn">
+
+                <label for="hobbyDeux">Centre d'intérêt 2 :</label>
+                <input type="text" id="hobbyDeux">
+
+                <label for="hobbyTrois">Centre d'intérêt 3 :</label>
+                <input type="text" id="hobbyTrois">
+
+            </fieldset>
+        </form>
+
+
+
     </main>
 
     <footer> © Copyright GB DWWM 2503</footer>
