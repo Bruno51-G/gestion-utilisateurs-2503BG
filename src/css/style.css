@@ -73,11 +73,13 @@ a{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 1.5rem;
+    transition: transform .2s;
 }
 
 a:hover{
     background-color: var(--secondaire);
     color: var(--quaternaire);
+    transform: scale(1.2);
 }
 
 .maison{
@@ -176,6 +178,92 @@ a:hover{
 
 .tdListeUtilisateur:nth-child(10){
     text-align: center;
+}
+
+.manAjout{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 50rem;
+    margin-right: 50rem;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px var(--dark);
+    background: linear-gradient(to top left, var(--quinaire), var(--quaternaire));
+}
+
+fieldset{
+    border: 2px solid var(--primaire);
+    width: 80rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px var(--dark);
+    background: linear-gradient(to top left, var(--quaternaire), var(--quinaire));
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.field1er{
+    margin-top: 3rem;
+}
+
+label{
+    display: inline-block;
+    width: 250px;      
+}
+
+#suffixeRue{
+    width: 10rem;
+}
+
+input, textarea, select{
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid var(--primaire);
+    padding: 7px;
+}
+
+legend{
+    border: 1px solid var(--primaire);
+    border-radius: 5px;
+    background-color: var(--primaire);
+    color: var(--light);
+    padding: 5px;
+}
+
+.conteneurBouton{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 8rem;
+}
+
+button{
+    width: 12rem;
+    height: 4rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primaire);
+    transition: transform .2s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--valide);
+    border: none;
+    transform: scale(1.2);
 }
 
 footer{
