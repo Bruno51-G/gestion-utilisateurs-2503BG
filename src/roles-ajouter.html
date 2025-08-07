@@ -17,23 +17,30 @@
     <main>
 
         <ul class="icone">
-            <li class="listeIcone"><a href="./index.html"><img class="maison" src="./img/logo/maisonNB.png" alt="icone maison"></li></a>
-            <li class="listeIcone"><a href="./roles.html">Rôles des utilisateurs</li></a>
-            <li class="listeIcone"><a href="./utilisateurs.html">Liste utilisateurs</a></li>
-            <li class="listeIcone"><a href="">Ajout rôle</li></a>
-            <li class="listeIcone"><a href="./utilisateurs-ajouter.html">Créer utilisateur</li></a>
-            <li class="listeIcone"><a href="./profil.html">Détails utilisateur</li></a>
+            <li class="listeIcone"><a href="./index.html"><img class="maison" src="./img/logo/maisonNB.png" alt="icone maison"></a></li>
+            <li class="listeIcone"><a href="./roles.html">Liste des rôles</a></li>
+            <li class="listeIcone"><a href="">Ajouter un rôle</a></li>
+            <li class="listeIcone"><a href="./utilisateurs.html">Liste des utilisateurs</a></li>
+            <li class="listeIcone"><a href="./utilisateurs-ajouter.html">Ajouter un utilisateur</a></li>
+            <li class="listeIcone"><a href="./profil.html">Afficher un profil utilisateur</a></li>
         </ul>
 
-        <label for="ajoutRole">Ajout d'un rôle* :</label>
-        <input type="text" id="ajoutRole" required placeholder="Rôle à ajouter"> 
+        <form>
+            <fieldset class="fieldAjoutRole">
+                <legend>Ajouter un rôle</legend>
+                
+                <label for="ajoutRole">Ajout d'un rôle* :</label>
+                <input type="text" id="ajoutRole" required placeholder="Rôle à ajouter"> 
 
-        <label for="DescriptionRole">Description :</label>
-        <input type="text" id="DescriptionRole" required placeholder="Vous pouvez donner une description ">
-        
-        <button id="validerRole">Ajouter</button>
-
-        <button id="reset">Réinitialiser</button>
+                <label for="DescriptionRole">Description :</label>
+                <input type="text" id="DescriptionRole" required placeholder="Vous pouvez donner une description ">
+            </fieldset>
+                
+            <div class="conteneurBouton">
+                <button id="validerRole">Ajouter</button>
+                <button id="reset">Réinitialiser</button>
+            </div>
+        </form>
     </main>
 
     <footer> © Copyright GB DWWM 2503</footer>
