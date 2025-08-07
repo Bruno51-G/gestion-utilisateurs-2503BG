@@ -7,6 +7,7 @@
     --quaternaire: #EBEBEB;
     --quinaire: #E98848;
     --valide: #6DD100;
+    --bord: #257D4C;
 }
 
 *{
@@ -194,9 +195,11 @@ form{
     margin-bottom: 10rem;
     margin-left: 50rem;
     margin-right: 50rem;
-    border: 1px solid var(--dark);
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px var(--dark);
+    border-top: 5px solid var(--dark);
+    border-left: 5px solid var(--dark);
+    border-bottom: 5px solid var(--tertiaire);
+    border-right: 5px solid var(--tertiaire);
+    box-shadow: 20px 20px 8px  var(--dark);
     background: linear-gradient(to top left, var(--quinaire), var(--quaternaire));
 }
 
@@ -221,6 +224,54 @@ fieldset{
 label{
     display: inline-block;
     width: 250px;      
+}
+
+.monsieurMadame {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.monsieurMadame label {
+    font-weight: normal;
+    width: auto;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.field1er{
+    display: flex;
+    flex-direction: column;
+}
+
+.monsieurL{
+    display: inline-block;
+    width: 250px;
+}
+
+.formeGroupe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; 
+}
+
+.formeGroupe label {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+#prenom, #nom, #dateNaissance, #adresseMail{
+    margin-left: 6rem;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
 }
 
 #suffixeRue{
@@ -262,8 +313,30 @@ button{
 button:hover{
     cursor: pointer;
     background-color: var(--valide);
-    border: none;
+    border: 2px solid var(--bord);
     transform: scale(1.2);
+}
+
+.carteUtilisateur{
+    width: 100rem;
+    background: linear-gradient(to bottom right, var(--dark), var(--primaire));
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px var(--dark);
+    margin-bottom: 50px;
+}
+
+.texteCarte{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgProfilCarte{
+    display: flex;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    width: 20rem;
 }
 
 footer{

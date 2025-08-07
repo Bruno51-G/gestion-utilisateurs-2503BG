@@ -30,17 +30,33 @@
 
                 <legend>Identifiant utilisateur</legend>
 
-                <label for="prenom">Prénom* :</label>
-                <input type="text" id="prenom" required placeholder="Prénom">
+                <div class="monsieurMadame">
+                    <label class="monsieurL" for="genreH">Homme :</label>
+                    <input class="monsieurI" type="radio" id="genreH" name="genre" required>
 
-                <label for="nom">Nom* :</label>
-                <input type="text" id="nom" required placeholder="Nom complet">
+                    <label class="madameL" for="genreF">Femme :</label>
+                    <input class="madameI" type="radio" id="genreF" name="genre" required>
+                </div>
 
-                <label for="dateNaissance">Date de naissance* :</label>
-                <input type="date" id="dateNaissance" required>
+                <div class="formeGroupe">
+                    <label for="prenom">Prénom* :</label>
+                    <input type="text" id="prenom" required placeholder="Prénom">
+                </div>
 
-                <label for="adresseMail">Adresse E-mail* :</label>
-                <input type="email" id="adresseMail" required placeholder="">
+                <div class="formeGroupe">
+                    <label for="nom">Nom* :</label>
+                    <input type="text" id="nom" required placeholder="Nom complet">
+                </div>
+
+                <div class="formeGroupe">
+                    <label for="dateNaissance">Date de naissance* :</label>
+                    <input type="date" id="dateNaissance" required>
+                </div>
+
+                <div class="formeGroupe">
+                    <label for="adresseMail">Adresse E-mail* :</label>
+                    <input type="email" id="adresseMail" required placeholder="">
+                </div>
 
             </fieldset>
 
