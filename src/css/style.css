@@ -65,7 +65,7 @@ h1{
     align-items: center;
 }
 
-a{
+.iconeA{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -77,7 +77,7 @@ a{
     transition: transform .2s;
 }
 
-a:hover{
+.iconeA:hover{
     background-color: var(--secondaire);
     color: var(--quaternaire);
     transform: scale(1.2);
@@ -373,15 +373,55 @@ button:hover{
     width: 30rem;
 }
 
-footer{
-    margin-left: auto;
-    margin-right: auto;    
-    width: 50rem;
-    margin-top: 5rem;
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid var(--dark);
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
     background-color: var(--quinaire);
+    color: var(--dark);
+    font-weight: bold;
+    flex-direction: column;
+    margin-top: 8rem;
+    background: radial-gradient(var(--quaternaire), var(--quinaire));
+}
+
+.basPage {
+    font-size: 2rem;
+    border: 2px solid var(--quinaire);
     padding: 2rem;
+    background-color: var(--tertiaire);
+}
+
+.hautPage {
+    position: absolute;
+    right: 20px;
+    border: 2px solid var(--quinaire);
+    padding: 0.5rem;
+    background-color: var(--tertiaire);
+    transition: transform .2s;
+}
+
+.hautPageA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.flecheFooter {
+    width: 3rem;
+    margin-bottom: 5px;
+}
+
+.hautPage p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.hautPage:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
