@@ -371,6 +371,47 @@ button:hover{
     width: 30rem;
 }
 
+section{
+    border-top: 3px solid var(--dark);
+    border-left: 3px solid var(--dark);
+    border-right: 3px solid var(--quaternaire);
+    border-bottom: 3px solid var(--tertiaire);
+    box-shadow: 10px 10px 5px var(--dark);
+    margin-top: 7rem;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.retourAccueil{
+    text-align: center;
+    border: 2px solid var(--dark);
+    box-shadow: none;
+    font-weight: bold;
+    background-color: var(--tertiaire);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primaire);
+}
+
+.lastMention{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hightFive{
+    width: 10rem;
+    height: 10rem;
+}
+
+.interligne{
+    line-height: 1rem;
+}
+
 footer {
     display: flex;
     justify-content: center;
