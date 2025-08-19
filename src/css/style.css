@@ -88,6 +88,19 @@ h1{
     height: auto;
 }
 
+.logoDon{
+    position: fixed;     
+    top: 18.8rem;          
+    right: 25px;
+    border: 2px solid var(--primaire);
+    cursor: pointer;
+    transition: transform .2s;               
+}
+
+.logoDon:hover{
+    transform: scale(1.2);
+}
+
 .tabRole{
     width: 75%;
     margin-top: 10rem;
@@ -367,7 +380,7 @@ button:hover{
     grid-row-start: 1;
     align-self: center;
     border-radius: 100%;
-    border: 5px solid var(--tertiaire);
+    border: 5px solid var(--quaternaire);
     width: 30rem;
 }
 
@@ -382,6 +395,7 @@ section{
     margin-right: 35rem;
     text-align: left;
     padding: 1rem;
+    background-color: var(--tertiaire);
 }
 
 .retourAccueil{
@@ -406,6 +420,11 @@ a{
 .hightFive{
     width: 10rem;
     height: 10rem;
+    transition: transform .2s;
+}
+
+.hightFive:hover{
+    transform: scale(3);
 }
 
 .interligne{
