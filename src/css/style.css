@@ -431,29 +431,67 @@ a{
     line-height: 1rem;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    background-color: var(--quinaire);
+.footer-container{
+    background: radial-gradient(var(--quaternaire), var(--quinaire));
     color: var(--dark);
     font-weight: bold;
-    flex-direction: column;
     margin-top: 8rem;
-    background: radial-gradient(var(--quaternaire), var(--quinaire));
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
 }
 
-.basPage {
-    font-size: 2rem;
-    border: 2px solid var(--quinaire);
-    padding: 2rem;
-    background-color: var(--tertiaire);
+
+.iconeReseau{
+    width: 5.5rem;
+    transition: transform .2s;
 }
 
-.hautPage {
+.iconeReseau:hover{
+    transform: scale(1.2);
+}
+
+.footer-center{
     position: absolute;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.basPage{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    background-color: var(--tertiaire);
+    border: 2px solid var(--quinaire);
+    display: inline-block;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 0;
+}
+
+.footer-right a{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.4rem;
+}
+
+.footer-right a:hover{
+    text-decoration: underline;
+    color: var(--primaire);
+}
+
+.hautPage{
     border: 2px solid var(--quinaire);
     padding: 0.5rem;
     background-color: var(--tertiaire);
@@ -467,19 +505,18 @@ footer {
     text-decoration: none;
 }
 
-.flecheFooter {
+.flecheFooter{
     width: 3rem;
     margin-bottom: 5px;
 }
 
-.hautPage p {
+.hautPage p{
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--dark);
 }
 
 .hautPage:hover{
-    cursor: pointer;
     transform: scale(1.2);
 }
 
