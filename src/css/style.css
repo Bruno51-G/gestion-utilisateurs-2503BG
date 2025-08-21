@@ -429,6 +429,59 @@ a{
 
 .interligne{
     line-height: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+
+.planSite ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.planSite li{
+    margin: 0.5em 0;
+}
+
+.planSite li a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.planSite li a:hover{
+    text-decoration: underline;
+    color: var(--primaire);
+}
+
+.planSite .categorie > span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.planSite ul ul{
+    padding-left: 1.5em;
+    border-top: 3px solid var(--dark);
+    border-left: 3px solid var(--dark);
+    border-right: 3px solid var(--quaternaire);
+    border-bottom: 3px solid var(--tertiaire);
+    box-shadow: 10px 10px 5px var(--dark);
+    margin-top: 0.3em;
+    margin-right: 80rem;
+}
+
+.imagePlan{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -38rem;
+    width: 50rem;
+    height: auto;
+    border-top: 3px solid var(--dark);
+    border-left: 3px solid var(--dark);
+    border-right: 3px solid var(--quaternaire);
+    border-bottom: 3px solid var(--tertiaire);
+    box-shadow: 10px 10px 5px var(--dark);
 }
 
 .footer-container{

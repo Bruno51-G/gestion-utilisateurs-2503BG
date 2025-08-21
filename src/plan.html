@@ -4,66 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Profil utilisateur</title>
+    <title>Plan du site</title>
 </head>
 <body>
-
     <header>
-        <h1>Détails profil utilisateur</h1>
+        <h1>Plan du site <small>(attention, la boussole n'est pas fournie !)</small></h1>
         <img class="logoCRM" src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo du CRM de Mulhouse">
     </header>
 
-    <main>
+    <main class="planSite">
         <a href="https://www.helloasso.com/associations/fonds-de-dotation-du-centre-de-readaptation-de-mulhouse/formulaires/1/widget" target="_blank">
             <img class="logoDon" src="./img/logo/logoDon.png" alt="Logo faire un don">
-        </a>        
-        <ul class="icone">
-            <li class="listeIcone"><a class="iconeA" href="./index.html"><img class="maison" src="./img/logo/maisonNB.png" alt="icone maison"></a></li>
-            <li class="listeIcone"><a class="iconeA" href="./roles.html">Liste des rôles</a></li>
-            <li class="listeIcone"><a class="iconeA" href="./roles-ajouter.html">Ajouter un rôle</a></li>
-            <li class="listeIcone"><a class="iconeA" href="./utilisateurs.html">Liste des utilisateurs</a></li>
-            <li class="listeIcone"><a class="iconeA" href="./utilisateurs-ajouter.html">Ajouter un utilisateur</a></li>
-            <li class="listeIcone"><a class="iconeA" href="">Afficher un profil utilisateur</a></li>
-        </ul>
+        </a>
 
-        <div class="carteUtilisateur">
+        <section>
+                <ul>
+                    <li class="categorie"><span>Pages principales</span>
+                        <ul>
+                            <li><a href="./index.html">&#8627 Page d'accueil</a></li>
+                            <li><a href="./roles.html">&#8627 Liste des rôles</a></li>
+                            <li><a href="./roles-ajouter.html">&#8627 Ajout du rôle</a></li>
+                            <li><a href="./utilisateurs.html">&#8627 Liste Utilisateurs</a></li>
+                            <li><a href="./utilisateurs-ajouter.html">&#8627 Ajout d'un utilisateur</a></li>
+                        </ul>
+                    </li>
 
-            <div class="texteCarte">
+                    <li class="categorie"><span>Informations légales</span>
+                        <ul>
+                            <li><a href="./mention_legale.html">&#8627 Mentions légales</a></li>
+                            <li><a href="./politiqueConfidentialite.html">&#8627 Politique de confidentialité</a></li>
+                        </ul>
+                    </li>
 
-                <div class="identifiantCarte">
-                    <p>Civilité :</p>
-                    <p>Prénom :</p>
-                    <p>Nom :</p>
-                    <p>Date naissance :</p>
-                    <p>✉️ adresse E-mail :</p>
-                </div>
+                    <li class="categorie"><span>Autres pages</span>
+                        <ul>
+                            <li><a href="./plan.html">&#8627 Plan du site (vous êtes ici)</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <div class="coordonneesCarte">
-                    <p>Numéro de rue :</p>
-                    <p>📍 adresse :</p>
-                    <p>📫 Code postal :</p>
-                    <p>🏙 Commune :</p>
-                    <p>📞 Numéro de poste téléphonique :</p>
-                </div>
+                <img class="imagePlan" src="./img/logo/imagePlan.jpg" alt="Image plan avec boussole">
+        </section>
 
-                <div class="hobbyCarte">
-                    <p>Langue parlée :</p>
-                    <p>Centre d'intérêt :</p>
-                </div>
-
-                
-            </div>
-
-            <img class="imgProfilCarte" src="./img/logo/profil.jpeg" alt="Photo de profil">
-
-        </div>
-
+        <section class="retourAccueil">
+            <p><a href="./index.html">Retour page d'accueil</a></p>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
-            
             <div class="footer-left">
                 <a href="https://www.facebook.com/CRMulhouse" target="_blank">
                     <img class="iconeReseau" src="./img/logo/facebook.png" alt="Icone Facebook">
@@ -95,9 +84,7 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </footer>
-
 </body>
 </html>
