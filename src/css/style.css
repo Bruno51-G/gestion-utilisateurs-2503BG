@@ -19,11 +19,11 @@ html{
 }
 
 body{
+    position: relative;
     font-size: 1.6rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #C0C0C0;
     background: linear-gradient(145deg,var(--tertiaire) 29%, var(--primaire) 100%);
-    min-height: 100vh;
 }
 
 header{
@@ -485,10 +485,11 @@ a{
 }
 
 .footer-container{
+    bottom: 0;
     background: radial-gradient(var(--quaternaire), var(--quinaire));
     color: var(--dark);
     font-weight: bold;
-    margin-top: 8rem;
+    margin-top: 42rem;
     position: relative;
     display: flex;
     justify-content: space-between;
