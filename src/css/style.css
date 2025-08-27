@@ -49,8 +49,6 @@ header{
 .logoCRM{
     width: 40rem;
     height: auto;
-    border: 1px solid var(--dark);
-    background-color: var(--light);
 }
 
 h1{

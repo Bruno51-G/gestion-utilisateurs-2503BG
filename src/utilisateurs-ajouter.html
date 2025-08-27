@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./js/main.js" type="module"></script>
     <title>Ajout d'un utilisateur</title>
 </head>
 <body>
     
     <header>
         <h1>Formulaire d'ajout d'un utilisateur</h1>
-        <img class="logoCRM" src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo du CRM de Mulhouse">
+        <img class="logoCRM" src="./img/logo/CRM_logo-horizontal-blanc.png" alt="Logo du CRM de Mulhouse">
     </header>
 
     <main class="mainAjout">
@@ -28,14 +29,14 @@
             <li class="listeIcone"><a class="iconeA" href="./profil.html">Afficher un profil utilisateur</a></li>
         </ul>
 
-        <form>
+        <form id="monForm">
             <fieldset class="field1er">
 
                 <legend>Identifiant utilisateur</legend>
 
                 <div class="monsieurMadame">
                     <label class="monsieurL" for="genreH">Homme :</label>
-                    <input class="monsieurI" type="radio" id="genreH" name="genre" required>
+                    <input class="monsieurI" type="radio" id="genreH" name="genre" required checked>
 
                     <label class="madameL" for="genreF">Femme :</label>
                     <input class="madameI" type="radio" id="genreF" name="genre" required>
@@ -43,22 +44,22 @@
 
                 <div class="formeGroupe">
                     <label for="prenom">Prénom* :</label>
-                    <input type="text" id="prenom" required placeholder="Prénom">
+                    <input type="text" id="prenom" required placeholder="Prénom" value="Cyril">
                 </div>
 
                 <div class="formeGroupe">
                     <label for="nom">Nom* :</label>
-                    <input type="text" id="nom" required placeholder="Nom complet">
+                    <input type="text" id="nom" required placeholder="Nom complet" value="DURAND">
                 </div>
 
                 <div class="formeGroupe">
                     <label for="dateNaissance">Date de naissance* :</label>
-                    <input type="date" id="dateNaissance" required>
+                    <input type="date" id="dateNaissance" required value="1988-11-12">
                 </div>
 
                 <div class="formeGroupe">
                     <label for="adresseMail">Adresse E-mail* :</label>
-                    <input type="email" id="adresseMail" required placeholder="✉️">
+                    <input type="email" id="adresseMail" required placeholder="✉️" value="test@exemple.fr">
                 </div>
 
             </fieldset>
@@ -69,29 +70,29 @@
 
                 <label for="numeroRue">Numéro de rue* :</label>
 
-                    <input type="number" id="numeroRue" required min="1" max="1000">
+                    <input type="number" id="numeroRue" required min="1" max="1000" value="10">
                     <select id="suffixeRue" required>
-                        <option value="" disabled selected>Sélectionner</option>
+                        <option value="" disabled >Sélectionner</option>
                         <option value="bis">bis</option>
                         <option value="ter">ter</option>
                         <option value="A">A</option>
-                        <option value="B">B</option>
+                        <option selected value="B">B</option>
                         <option value="impasse">impasse</option>
                         <option value="allee">allée</option>
                     </select>
 
 
                 <label for="nomDeRue">Adresse* :</label>
-                <input type="text" id="nomDeRue" required placeholder="📍 Rue">
+                <input type="text" id="nomDeRue" required placeholder="📍 Rue" value="Rue de la pie qui chante">
 
                 <label for="nomcommune">Commune* :</label>
-                <input type="text" id="nomcommune" required placeholder="🏙 Commune">
+                <input type="text" id="nomcommune" required placeholder="🏙 Commune" value="Y">
 
                 <label for="codePostal">Code postal* :</label>
-                <input type="number" id="codePostal" required placeholder="📫 Code postal">
+                <input type="number" id="codePostal" required placeholder="📫 Code postal" value="10000">
 
-                <label for="numeroTel">Numéro de poste :</label>
-                <input type="number" id="numeroTel" placeholder="📞 Poste téléphonique à 4 chiffres">
+                <label for="numeroTel">Numéro de téléphone :</label>
+                <input type="number" id="numeroTel" placeholder="📞 ex : 0601050707 " value="0601010101">
 
             </fieldset>
 
