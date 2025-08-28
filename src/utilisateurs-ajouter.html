@@ -44,7 +44,7 @@
 
                 <div class="formeGroupe">
                     <label for="prenom">Prénom* :</label>
-                    <input type="text" id="prenom" required placeholder="Prénom" value="Cyril">
+                    <input type="text" id="prenom" required placeholder="Prénom" value="Cyril"><span id="erreurPrenom" class="spanAjoutUtilisateur"></span>
                 </div>
 
                 <div class="formeGroupe">
@@ -73,10 +73,11 @@
                     <input type="number" id="numeroRue" required min="1" max="1000" value="10">
                     <select id="suffixeRue" required>
                         <option value="" disabled >Sélectionner</option>
+                        <option selected value=""></option>
                         <option value="bis">bis</option>
                         <option value="ter">ter</option>
                         <option value="A">A</option>
-                        <option selected value="B">B</option>
+                        <option value="B">B</option>
                         <option value="impasse">impasse</option>
                         <option value="allee">allée</option>
                     </select>

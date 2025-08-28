@@ -3,6 +3,7 @@ const prenom = document.getElementById('prenom');
 const nom = document.getElementById('nom');
 const numeroTel = document.getElementById('numeroTel');
 const monForm = document.getElementById('monForm');
+const erreurPrenom = document.getElementById('erreurPrenom')
 
 monForm.addEventListener('submit', function(event){
     event.preventDefault();
@@ -11,9 +12,10 @@ monForm.addEventListener('submit', function(event){
     const nomValide = verifNom(nom.value);
 
     if(prenomValide && nomValide){
-        alert('Saisie correcte !');
+        erreurPrenom.innerHTML = '<span class="texteVert">\u2714</span>'
     } else {
-        alert('ERREUR de saisie !');
+        
+        erreurPrenom.innerHTML = '⛔ Prénom invalide ⛔'
     }
 });
 

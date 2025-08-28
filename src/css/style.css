@@ -272,6 +272,15 @@ input[type="radio"]:hover {
     margin-bottom: 1rem; 
 }
 
+.spanAjoutUtilisateur{
+    margin-left: 1rem;
+}
+
+.texteVert{
+    color: var(--bord);
+    font-size: 3rem;
+}
+
 .formeGroupe label {
     width: 200px;
     margin-right: 1rem;
