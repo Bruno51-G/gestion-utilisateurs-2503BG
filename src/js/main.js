@@ -15,6 +15,23 @@ const erreurPrenom = document.getElementById('erreurPrenom');
 
 const validation = new ValidationDonneesUtilisateur();
 
+prenom.addEventListener('input', () =>{
+    try{
+        const prenomValide = validation.verifPrenom(prenom.value);
+
+        if(prenomValide){
+            prenom.classList.remove('input-invalideSaisie');
+            prenom.classList.add('input-valideSaisie');
+        } else {
+            prenom.classList.remove('input-valideSaisie');
+            prenom.classList.add('input-invalideSaisie');
+        }
+    }catch{
+        console.error("Une erreur est survenue lors de la validation :");
+    }
+});
+
+
 monForm.addEventListener('submit', (event) =>{
     event.preventDefault();
 

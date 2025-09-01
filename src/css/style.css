@@ -8,6 +8,10 @@
     --quinaire: #E2B714;
     --valide: #6DD100;
     --bord: #257D4C;
+    --valideSaisie: #84CA84;
+    --invalideSaisie: #F36262EE;
+    --bordureValide:#005F00;
+    --bordureInvalide: #a50000ee;
 }
 
 *{
@@ -259,6 +263,16 @@ label{
 
 input[type="radio"]:hover {
     cursor: pointer;
+}
+
+.input-valideSaisie{
+    background-color: var(--valideSaisie);
+    border-color: var(--bordureValide);
+}
+
+.input-invalideSaisie{
+    background-color: var(--invalideSaisie);
+    border-color: var(--bordureInvalide)
 }
 
 .monsieurL{
