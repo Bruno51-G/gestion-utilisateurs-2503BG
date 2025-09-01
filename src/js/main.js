@@ -1,4 +1,5 @@
 import { DonneesUtilisateur } from "./DonneesUtilisateur.js";
+import { ValidationDonneesUtilisateur } from "./ValidationDonneesUtilisateur.js";
 
 const valideUtilisateur = document.getElementById('valideUtilisateur');
 const prenom = document.getElementById('prenom');
@@ -12,34 +13,27 @@ const erreurPrenom = document.getElementById('erreurPrenom');
  * Récupère les données du formulaire
  */
 
-monForm.addEventListener('submit', function(event){
+const validation = new ValidationDonneesUtilisateur();
+
+monForm.addEventListener('submit', (event) =>{
     event.preventDefault();
 
-    const prenomValide = verifPrenom(prenom.value);
-    const nomValide = verifNom(nom.value);
+    try{
+        const prenomValide = validation.verifPrenom(prenom.value);
+        // const nomValide = verifNom(nom.value);
 
-    if(prenomValide && nomValide){
-        erreurPrenom.innerHTML = '<span class="texteVert">\u2714</span>'
-    } else {
-        
-        erreurPrenom.innerHTML = '⛔ Prénom invalide ⛔'
+        if(prenomValide){
+            erreurPrenom.innerHTML = '<span class="texteVert">\u2714</span>'
+        } else {
+            
+            erreurPrenom.innerHTML = '⛔ Prénom invalide ⛔'
+        }
+    } catch(error){
+        console.error("Une erreur est survenue lors de la validation :");
     }
 });
 
-/**
- * Pour valider un prénom
- * 3 caractères minimum
- * @param {string} _prenom le prénom est à validé
- * @returns {Boolean} VRAI si le nom est valide, sinon FAUX
- */
 
-function verifPrenom(_prenom){
-    let regexPrenom = /^[A-Za-z]{3,}$/;
-
-    _prenom = _prenom.trim();
-
-    return regexPrenom.test(_prenom);
-}
 
 
 // /**
