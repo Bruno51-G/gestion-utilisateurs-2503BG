@@ -80,9 +80,10 @@ h1{
     font-size: 1.5rem;
     font-weight: bolder;
     color: var(--primaire);
-    border: 2px solid var(--primaire);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top: 3px solid var(--tertiaire);
+    border-left: 3px solid var(--tertiaire);
+    border-right: 3px solid var(--dark);
+    border-bottom: 3px solid var(--dark);
     padding: 1.5rem;
     transition: transform .2s;
 }
