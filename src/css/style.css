@@ -1,8 +1,8 @@
 :root{
     --light: #FFFFFF;
     --dark: #000000;
-    --primaire: #004E98;
-    --secondaire: #4b84c0;
+    --primaire: #090979;
+    --secondaire: #56a5f0;
     --tertiaire: #C0C0C0;
     --quaternaire: #EBEBEB;
     --quinaire: #E2B714;
@@ -91,6 +91,8 @@ h1{
 .iconeA:hover{
     background-color: var(--secondaire);
     color: var(--quaternaire);
+    border-right: 3px solid var(--primaire);
+    border-bottom: 3px solid var(--primaire);
     transform: scale(1.2);
 }
 
@@ -222,7 +224,7 @@ form{
     border-bottom: 5px solid var(--tertiaire);
     border-right: 5px solid var(--tertiaire);
     box-shadow: 20px 20px 8px  var(--dark);
-    background: linear-gradient(to top left, var(--quinaire), var(--quaternaire));
+    background: linear-gradient(to top left, var(--secondaire), var(--quaternaire));
 }
 
 fieldset{
@@ -232,7 +234,7 @@ fieldset{
     margin-bottom: 3rem;
     border-radius: 5px;
     box-shadow: 10px 10px 5px var(--dark);
-    background: linear-gradient(to top left, var(--quaternaire), var(--quinaire));
+    background: linear-gradient(to top left, var(--quaternaire), var(--secondaire));
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
@@ -319,6 +321,7 @@ input, textarea, select{
     border-radius: 5px;
     border: 2px solid var(--primaire);
     padding: 7px;
+    background-color: var(--quaternaire);
 }
 
 legend{
@@ -343,6 +346,7 @@ button{
     font-weight: bold;
     border-radius: 0.5rem;
     border: 2px solid var(--primaire);
+    background-color: var(--quaternaire);
     transition: transform .2s;
 }
 
@@ -519,11 +523,12 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
 }
 
 .footer-container{
-    background: radial-gradient(var(--quaternaire), var(--quinaire));
+    background: radial-gradient(ellipse at top, var(--quaternaire) 0%, transparent),
+                radial-gradient(ellipse at top, var(--tertiaire) 30%, transparent),
+                radial-gradient(ellipse at top, var(--primaire));
     color: var(--dark);
     font-weight: bold;
     position: relative;
@@ -556,7 +561,7 @@ footer{
     font-size: 1.6rem;
     padding: 1rem 2rem;
     background-color: var(--tertiaire);
-    border: 2px solid var(--quinaire);
+    border: 2px solid var(--primaire);
     display: inline-block;
     text-align: center;
     padding: 2rem;
@@ -581,7 +586,7 @@ footer{
 }
 
 .hautPage{
-    border: 2px solid var(--quinaire);
+    border: 2px solid var(--primaire);
     padding: 0.5rem;
     background-color: var(--tertiaire);
     transition: transform .2s;
