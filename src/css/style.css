@@ -225,14 +225,27 @@ h1{
 .boutonAjoutUtil{
     display: flex;
     width: 5rem;
-    transition: transform .2s;
+    transition: transform 0s;
 }
 
 .boutonAjoutUtil:hover{
+    margin-left: 0.5rem;
     cursor: pointer;
     background-color: var(--secondaire);
     border: 2px solid var(--primaire);
     transform: scale(1.2);
+}
+
+.ajoutUtilisateurBT{
+    display: flex;
+    align-items: center;
+}
+
+.ajoutUtilisateurTexte{
+    position: absolute;
+    font-weight: bold;
+    color: var(--primaire);
+    margin-left: 6.5rem;
 }
 
 .boutonProfil{
