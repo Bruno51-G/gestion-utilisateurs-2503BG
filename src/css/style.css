@@ -206,6 +206,36 @@ h1{
     text-align: center;
 }
 
+.boutonProfil{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    transition: transform .2s;
+}
+
+.boutonProfil:hover{
+    background-color: var(--secondaire);
+    border: 2px solid var(--primaire);
+    transform: scale(1.2);
+}
+
+.boutonModif{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    transition: transform .2s;
+}
+
+.boutonModif:hover{
+    background-color: var(--quinaire);
+    border: 2px solid var(--primaire);
+    transform: scale(1.2);
+}
+
 .boutonSupp{
     display: flex;
     justify-content: center;
@@ -248,20 +278,6 @@ h1{
     margin-left: 6.5rem;
 }
 
-.boutonProfil{
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5rem;
-    transition: transform .2s;
-}
-
-.boutonProfil:hover{
-    background-color: var(--secondaire);
-    border: 2px solid var(--primaire);
-    transform: scale(1.2);
-}
 
 .manAjout{
     display: flex;
