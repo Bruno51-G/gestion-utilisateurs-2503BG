@@ -2,7 +2,7 @@
 FROM mariadb:11.8.3
 
 # Mot de passe ROOT du serveur de base de données
-ENV MARIADB_ROOT_PASSEWORD=azerty
+ENV MARIADB_ROOT_PASSWORD=azerty
 
 # Nom de la base de données qui sera créée au 1er démarrage du conteneur
 ENV MARIADB_DATABASE=db_users
