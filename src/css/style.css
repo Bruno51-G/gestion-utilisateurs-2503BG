@@ -231,7 +231,7 @@ h1{
 }
 
 .boutonModif:hover{
-    background-color: var(--quinaire);
+    background-color: var(--secondaire);
     border: 2px solid var(--primaire);
     transform: scale(1.2);
 }

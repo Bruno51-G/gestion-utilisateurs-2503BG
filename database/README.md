@@ -73,8 +73,9 @@ role_id --> role_name, role_description, role_register_code
 
 | user_id | user_email | user_lastname | user_firstname | user_password | role_id |
 | --- | --- | --- | --- | --- | --- | 
-| 1 | toto@example.com | ingals | charles | azerty | 3 | 
-| 2 | bertrand@example.com | macron |  | 123456 | 1 | 
-| 3 | germaine@example.fr | lustucru | germaine | 1234 | 2 | 
-| 4 | daniel@example.com | germain | daniel | azer | 1 | 
-| 5 | celine@example.com | dion | céline | rené | 2 | 
+| 1 | lea.ricossec@example.com | ricossec | lea | azerty | 3 | 
+| 2 | alex.terieur@example.com | terieur | alex | 123456 | 1 | 
+| 3 | laure.dinateur@example.com | dinateur | laure | 1234 | 2 | 
+| 4 | harry.covert@example.com | covert | | azer | 1 | 
+| 5 | sam.diswar@example.com | disward | sam | aqw123 | 2 | 
+

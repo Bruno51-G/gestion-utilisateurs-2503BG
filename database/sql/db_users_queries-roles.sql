@@ -1,4 +1,3 @@
-
 /* Modifier le nom du rôle n°2 en "Modérateur". */
 
 UPDATE t_role SET role_name='modérateur' WHERE role_id=2;
