@@ -27,9 +27,6 @@ VALUES
 ('administrateur', '9874', 'Les super pouvoirs');
 
 
-
-
-
 CREATE TABLE IF NOT EXISTS t_user 
 (
 	user_id INT AUTO_INCREMENT,
@@ -41,6 +38,18 @@ CREATE TABLE IF NOT EXISTS t_user
 	PRIMARY KEY (user_id),
 	UNIQUE (user_email)
 );
+
+/* Modifier la table t_user*/
+ALTER TABLE t_user ADD CONSTRAINT FK_user_role FOREIGN KEY (role_id) REFERENCES t_role(role_id);
+
+INSERT INTO t_user
+(user_email, user_lastname, user_firstname, user_password, role_id)
+VALUES
+('lea.ricossec@example.com', 		'ricossec', 	'lea', 	'azerty', 	3),
+('alex.terieur@example.com', 		'terieur', 		'alex', 	'123456', 	1),
+('laure.dinateur@example.com', 	'dinateur', 	'laure', '1234', 		2),
+('harry.covert@example.com', 		'covert', 		NULL, 	'azer', 		1),
+('sam.diswar@example.com', 		'disward', 		'sam', 	'aqw123', 	2);
 
 /*
 LMD : Langage de Modélisation des données 
