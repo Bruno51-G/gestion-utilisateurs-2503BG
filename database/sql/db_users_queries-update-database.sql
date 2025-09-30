@@ -39,7 +39,7 @@ INSERT INTO t_user
 (user_lastname, user_firstname, user_email, user_password, role_id)
 VALUES
 ('danloss', 'ella', 'ella.danloss@example.com', '12345', (SELECT role_id FROM t_role WHERE role_name= 'employé')),
-('golay', 'jerry', 'j.golay@example.fr', 'azerty', 'employé'),
-('camant', 'medhi', 'medhi@example.fr', 'password', 'cadre'),
-('javelle', 'aude', 'aj@example.com', '121180', 'employé'),
-('scroute', 'jessica', 'jescr@example.fr', '231297', 'dirigeant');
+('golay', 'jerry', 'j.golay@example.fr', 'azerty', (SELECT role_id FROM t_role WHERE role_name= 'employé')),
+('camant', 'medhi', 'medhi@example.fr', 'password', (SELECT role_id FROM t_role WHERE role_name= 'cadre')),
+('javelle', 'aude', 'aj@example.com', '121180', (SELECT role_id FROM t_role WHERE role_name= 'employé')),
+('scroute', 'jessica', 'jescr@example.fr', '231297', (SELECT role_id FROM t_role WHERE role_name= 'dirigeant'));
